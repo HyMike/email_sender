@@ -12,11 +12,9 @@ email['subject'] = 'This is a super secret message!'
 
 email.set_content(new_message.substitute({'name': 'Adrianne'}), 'html')
 
-with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp: 
+with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.ehlo()
     smtp.starttls()
     smtp.login('onelife9788@gmail.com', 'tnsdnjdooaczptfg')
     smtp.send_message(email)
-    print('It\'s totally completed!')
-
-
+    print('completed!')
