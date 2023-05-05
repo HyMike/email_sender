@@ -17,6 +17,6 @@ with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.starttls()
     smtp.login('onelife9788@gmail.com', 'tnsdnjdooaczptfg')
     smtp.send_message(email)
-    print('completed!')
+    print('It\'s totally completed!')
 
 
